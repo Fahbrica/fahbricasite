@@ -1,0 +1,150 @@
+// output: index.html
+doctype html
+html(lang="pt-br")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    meta(name="viewport" content="width=device-width")
+    //- meta(name="theme-color" content="#107fc9")
+    //- meta(name="msapplication-navbutton-color" content="#107fc9")
+    //- meta(name="apple-mobile-web-app-status-bar-style" content="#107fc9")
+    //- link(rel="shortcut icon", type="image/png", href="imagens/favicon-iot.png")
+    title Fahbrica | Agência Criativa
+    link(rel="stylesheet", type="text/css", href="css/reset.css")
+    link(rel="stylesheet", type="text/css", href="css/jquery.fullPage.css")
+    link(rel="stylesheet", type="text/css", href="css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400", rel="stylesheet")
+  body
+    #header
+      #logo F
+      #menu-icon
+        span
+        span
+        span
+    #fullpage
+      #section-home.section
+        .div-color
+        span.big-title hbrica
+        span.box-border
+        ul#navigate
+          li We do
+          li We can
+          li We write
+          li We exist
+        #fast-links
+          h1.fast-link Fahbrica
+          h4.fast-link Contato
+        #text-center
+          h3 The typeface doesn't really matter, as long as the <span class="highlight">text is good</span>.
+          h6 - John Maedda
+          hr
+      #section-who.section
+        span.big-title Bout
+        #who-carroussel
+        #who-text
+          span.box-border
+          .section-title <span class="highlight">We are</span> creative
+          p 
+            | Curabitur aliquet, metus quis ornare semper, magna nibh tincidunt ante, et congue lectus dui vitae enim.
+            | Aliquam id accumsan erat. Mauris vitae sem vel nulla facilisis consequat. Sed sed felis posuere, ullamcorper
+            | orci id, fringilla ipsum. Integer dapibus tellus sit amet lorem efficitur, nec varius dolor volutpat. Donec
+            | nisl lacus, tempor quis augue a, lacinia condimentum diam. Nam iaculis quam vel enim faucibus, eget tincidunt felis interdum.</br>
+            | Fusce ac molestie mi. Fusce at lacinia erat. Nam sodales blandit ornare. Suspendisse erat eros, dignissim nec
+            | mattis at, imperdiet et urna. Curabitur consectetur justo ut iaculis tempor. Mauris vitae lacus et arcu ultrices ullamcorper.
+          hr
+        span.big-title Creativ
+      #section-what.section
+        .div-color
+        span.big-title erviços
+        #what-text
+          span.box-border
+          .section-title <span class="highlight">Nossos</span> serviços
+          p
+            | Vivamus molestie dui vel varius auctor. Mauris interdum, libero ut efficitur gravida,
+            | orci lectus eleifend erat, nec pellentesque massa odio at nulla. Cras id pharetra orci,
+            | lacinia aliquet metus.
+          hr
+        #box-service
+          .item-service
+            .icon-service
+            h2 Branding
+            .hr-service
+            p 
+              | Curabitur aliquet, metus quis ornare semper, magna nibh tincidunt ante, 
+              | et congue lectus dui vitae enim. Aliquam id accumsan erat.
+          .item-service
+            .icon-service
+            h2 Photography
+            .hr-service
+            p 
+              | Sed mattis ipsum leo, et tincidunt erat ullamcorper ut. Fusce cursus odio mi,
+              | ut aliquam magna dapibus a. Vivamus auctor tempor odio id ornare.
+          .item-service
+            .icon-service
+            h2 Animation
+            .hr-service
+            p 
+              | Fusce ac molestie mi. Fusce at lacinia erat. Nam sodales blandit ornare. Suspendisse
+              | erat eros, dignissim nec mattis at, imperdiet et urna.
+          .item-service
+            .icon-service
+            h2 Generate Ideas
+            .hr-service
+            p 
+              | Vivamus molestie dui vel varius auctor. Mauris interdum, libero ut efficitur gravida, 
+              | orci lectus eleifend erat, nec pellentesque massa odio at nulla.
+      #section-projects.section
+        span.big-title obs
+        #projects-text
+          .box-border
+          .section-title <span class="highlight">Nossos</span> Projetos
+          ul#jobs
+            li 
+              span.highlight Branding
+            li Photography
+            li Animation
+            li UI/UX Design
+        #jobs-images
+          .job-img
+            .job-img-desc
+              h3 Branding
+              p uma breve descrição
+          .job-img
+            .job-img-desc
+              h3 Branding
+              p uma breve descrição
+          .job-img
+            .job-img-desc
+              h3 Branding
+              p uma breve descrição
+          .job-img
+            .job-img-desc
+              h3 Branding
+              p uma breve descrição
+      #section-contact.section
+        .div-color
+        span.big-title ntato
+        #contact-text
+          .box-border
+          .section-title <span class="highlight">Entre em</span> Contato
+          #mail
+            h3 Email
+            p contato@fahbrica.com.br
+          #phone
+            h3 Phone
+            p (47) 1010-1010
+            p (47) 1010-1010
+        form#contact-form
+          input(type="text" placeholder="Nome")
+          input(type="text" placeholder="E-mail")
+          input(type="text" placeholder="Telefone")
+          textarea(type="text" placeholder="Mensagem")
+          button(type="submit") Enviar
+        #copy-site
+          &copy 2016 <span class="highlight">Fahbrica</span>
+
+  script(type="text/javascript", src="js/jquery.js")
+  script(type="text/javascript", src="js/jquery.fullPage.min.js")
+  script(type="text/javascript", src="js/script.js")
+  script(type="text/javascript", src="http://localhost:35729/livereload.js")

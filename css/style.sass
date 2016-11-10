@@ -1,0 +1,462 @@
+// compileExpanded: style.css
+// REUTILIZÁVEIS
+// TIPOGRAFIA
+body
+  font-family: 'Open Sans', sans-serif
+.big-title
+  font-family: 'Montserrat', sans-serif
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 170px
+  letter-spacing: -4px
+  color: white
+  opacity: 0.1
+  position: absolute
+p
+  line-height: 1.5
+br
+  line-height: 50px
+.section-title
+  text-transform: uppercase
+  font-size: 58px
+  font-weight: 700
+  font-family: 'Montserrat', sans-serif
+  line-height: 1.1
+.box-border
+  border: 12px solid rgba(white, 0.1)
+  position: absolute
+.highlight
+  color: yellowgreen
+.div-color
+  width: 43%
+  height: 100vh
+  background: pink
+  opacity: 0.7
+  position: absolute
+  top: 0
+  left: 0
+hr
+  width: 80px
+  height: 4px
+  float: left
+  border: none
+  background: yellowgreen
+/* SITE */
+#header
+  #logo
+    width: 80px
+    height: 80px
+    z-index: 5
+    background: yellowgreen
+    color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    left: 40px
+    top: 40px
+    font-size: 48px
+    font-weight: 700
+  #logo:hover
+    cursor: pointer
+  #menu-icon
+    width: 28px
+    height: 22px
+    position: fixed
+    z-index: 5
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    right: 80px
+    top: 80px
+    span
+      content: ""
+      width: 100%
+      height: 2px
+      background: white
+  #menu-icon:hover
+    cursor: pointer
+#section-home
+  background: orangered
+  .big-title
+    left: -17px
+    top: 50%
+    transform: translateY(-50%)
+  .box-border
+    width: 525px
+    height: 255px
+    left: 38%
+    top: 40%
+  #navigate
+    position: absolute
+    left: 35%
+    top: 80px
+    li
+      display: inline
+      margin: 10px
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 700
+      letter-spacing: 1px
+      color: white
+  #fast-links
+    width: 100%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    display: flex
+    justify-content: space-between
+    box-sizing: border-box
+    padding: 0 30px
+    .fast-link
+      transform: rotate(270deg)
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 400
+      letter-spacing: 1px
+      color: white
+    .fast-link:hover
+      cursor: pointer
+  #text-center
+    width: 620px
+    left: 25%
+    top: 47%
+    position: absolute
+    h3
+      max-width: 570px
+      font-size: 32px
+      font-weight: 700
+      line-height: 1.3
+      color: white
+    h6
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 14px
+      text-align: right
+      margin-top: 20px
+      color: white
+#section-who
+  background: white
+  .big-title
+    color: #222222
+  .big-title:first-child
+    top: 50%
+    left: -10px
+    transform: translateY(-50%)
+  .big-title:last-child
+    top: 65%
+    right: -10px
+  #who-carroussel
+    width: 520px
+    height: 720px
+    background: pink
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 50%
+  #who-text
+    position: absolute
+    max-width: 660px
+    left: 20%
+    top: 20%
+    .box-border
+      border-color: rgba(#222222, 0.1)
+      width: 270px
+      height: 160px
+      left: 70px
+    .section-title
+      width: 320px
+      margin-bottom: 60px
+      margin-top: 30px
+      .highlight
+        opacity: 0.6
+    p
+      color: #333333
+      margin-bottom: 30px
+#section-what
+  background: orangered
+  .big-title
+  #what-text
+    position: absolute
+    left: 120px
+    top: 260px
+    .box-border
+      left: 80px
+      width: 290px
+      height: 170px
+    .section-title
+      width: 260px
+      margin-bottom: 70px
+      margin-top: 30px
+    p
+      max-width: 360px
+      margin-bottom: 20px
+      color: #dddddd
+  #box-service
+    width: 55vw
+    height: 65vh
+    padding: 30px
+    position: absolute
+    background: white
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-content: space-around
+    // top: 50%
+    transform: translateY(54%)
+    right: 7%
+    bottom: 50%
+    .item-service
+      max-width: 400px
+      .icon-service
+        width: 60px
+        height: 60px
+        border: 4px solid yellowgreen
+      h2
+        text-transform: uppercase
+        font-size: 15px
+        font-weight: 700
+        margin: 20px 0 10px 0
+      .hr-service
+        width: 40px
+        height: 2px
+        background: yellowgreen
+      p
+        color: #333333
+        margin-top: 20px
+        text-align: justify
+#section-projects
+  background: white
+  .big-title
+    color: #222222
+    transform: translateY(-50%)
+  #projects-text
+    position: absolute
+    right: 72%
+    top: 20%
+    z-index: 5
+    .box-border
+      border-color: rgba(#222222, 0.1)
+      width: 270px
+      height: 160px
+      position: absolute
+      left: 120px
+    .section-title
+      margin-top: 30px
+      max-width: 260px
+      line-height: 1.2
+    #jobs
+      position: absolute
+      left: 370px
+      top: 280px
+      li
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: 700
+        margin-bottom: 50px
+        text-align: right
+      li:hover
+        cursor: pointer
+  #jobs-images
+    max-width: 100vh
+    display: flex
+    flex-wrap: wrap
+    position: absolute
+    top: 0
+    right: 0
+    .job-img
+      width: 50vh
+      height: 50vh
+      display: flex
+      justify-content: center
+      align-items: center
+      .job-img-desc
+        position: absolute
+        width: 44vh
+        height: 44vh
+        background: rgba(yellowgreen, 0.9)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        transform: scale(0)
+        transition: all 300ms cubic-bezier(0.42, 0, 0.45, 1.35)
+        h3
+          text-transform: uppercase
+          font-size: 22px
+          font-weight: 700
+          margin-bottom: 10px
+        p
+          font-size: 14px
+          text-transform: uppercase
+          font-weight: 700
+          color: white
+          letter-spacing: 1px
+    .job-img:hover
+      cursor: pointer
+      .job-img-desc
+        transform: scale(1)
+    .job-img:nth-child(1)
+      background: lightskyblue
+    .job-img:nth-child(2)
+      background: greenyellow
+    .job-img:nth-child(3)
+      background: orangered
+    .job-img:nth-child(4)
+      background: pink
+#section-contact
+  background: orangered
+  .big-title
+    transform: translateY(-40%)
+  #contact-text
+    position: absolute
+    left: 10%
+    transform: translateY(-50%)
+    .box-border
+      width: 270px
+      height: 160px
+      left: 100px
+    .section-title
+      max-width: 320px
+      margin-top: 30px
+    h3
+      text-transform: uppercase
+      font-weight: 700
+      color: white
+      font-size: 14px
+      margin-bottom: 8px
+    p
+      font-weight: 700
+      font-size: 14px
+      color: yellowgreen
+    #mail, #phone
+      margin-left: 160px
+    #mail
+      margin-top: 260px
+    #phone
+      margin-top: 30px
+  #contact-form
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    right: 20%
+    transform: translateY(-40%)
+    input, textarea
+      width: 540px
+      background: none
+      border-radius: 0
+      border-bottom: 2px solid white
+      padding: 10px
+      margin-bottom: 40px
+    textarea
+      height: 190px
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+      color: white
+      font-family: 'Montserrat', sans-serif
+      font-size: 15px
+      letter-spacing: 0.6px
+      font-weight: 700
+    input::-moz-input-placeholder, textarea::-moz-input-placeholder
+      color: white
+      font-family: 'Montserrat', sans-serif
+      font-size: 15px
+      letter-spacing: 0.6px
+      font-weight: 700
+    input:-moz-input-placeholder, textarea:-moz-input-placeholder
+      color: white
+      font-size: 15px
+      font-family: 'Montserrat', sans-serif
+      letter-spacing: 0.6px
+      font-weight: 700
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder
+      color: white
+      font-size: 15px
+      font-family: 'Montserrat', sans-serif
+      letter-spacing: 0.6px
+      font-weight: 700
+    button
+      width: 170px
+      height: 45px
+      background: rgba(pink, 0)
+      border: 1px solid rgba(white, 0.2)
+      transition: background 300ms ease-in-out
+      font-size: 13px
+      color: white
+      text-transform: uppercase
+    button:hover
+      cursor: pointer
+      background: rgba(pink, 0.4)
+  #copy-site
+    position: absolute
+    bottom: 70px
+    right: 44%
+    font-family: 'Montserrat', sans-serif
+    font-size: 13px
+    font-weight: 700
+    color: #dddddd
+/* RESPONSIVE */
+@media (max-width: 1600px)
+  #section-what
+    #box-service
+      .item-service
+        max-width: 300px
+  #section-contact
+    #contact-form
+      right: 10%
+@media (max-width: 1475px)
+  #section-what
+    #what-text
+      left: 5%
+  #section-projects
+    #projects-text
+      #jobs
+        left: 310px
+@media (max-width: 1331px)
+  #section-home
+    .box-border
+      left: 30%
+    #text-center
+      left: 20%
+  #section-who
+    #who-carroussel
+      width: 50vw
+      height: 100vh
+    #who-text
+      left: 15%
+  #section-what
+    #box-service
+      height: 72vh
+      bottom: 0
+      right: 0
+      transform: none
+      .item-service
+        max-width: 260px
+        p
+          font-size: 14px
+  #section-projects
+    #jobs-images
+      max-width: 50vw
+      top: 50%
+      transform: translateY(-50%)
+      .job-img
+        width: 25vw
+        height: 25vw
+        .job-img-desc
+          width: 22vw
+          height: 22vw
+  #section-contact
+    #contact-form
+      right: 5%
+@media (max-width: 1160px)
+  #section-contact
+    #contact-text
+      #mail, #phone
+        margin-left: 130px
+    #contact-form
+      input, textarea
+        width: 480px
+//@media (max-width: 1024px)
+// @media (max-width: 768px)
+// @media (max-width: 480px)
