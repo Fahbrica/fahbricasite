@@ -343,8 +343,9 @@ hr {
 
 #section-projects #projects-text #jobs {
   position: absolute;
-  left: 370px;
+  left: 330px;
   top: 280px;
+  min-width: 200px;
 }
 
 #section-projects #projects-text #jobs li {
