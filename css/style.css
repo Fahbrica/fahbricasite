@@ -290,7 +290,6 @@ hr {
 #section-what #box-service .item-service .icon-service {
   width: 60px;
   height: 60px;
-  border: 4px solid yellowgreen;
 }
 
 #section-what #box-service .item-service h2 {
@@ -354,10 +353,14 @@ hr {
   font-weight: 700;
   margin-bottom: 50px;
   text-align: right;
+  z-index: 10;
 }
 
 #section-projects #projects-text #jobs li:hover {
   cursor: pointer;
+  color: yellowgreen;
+
+
 }
 
 #section-projects #jobs-images {
